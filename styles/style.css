@@ -35,7 +35,7 @@ body a:hover {
 
 body{
   background:url(../images/assets/skyline-circle@3x.png) 89% 2% no-repeat, radial-gradient(circle at 31% 54%, #00b7c0, #001a4b); 
- font-family: Avenir-Heavy;
+ font-family: Avenir-Heavy, Helvetica,Arial,sans-serif;
    display: flex;
   min-height: 100vh;
   flex-direction: column;
