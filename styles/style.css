@@ -45,7 +45,9 @@ body{
 main{
 	 flex: 1;
 }
-
+.mobile-content-block{
+	display: none;
+}
 .navbar{
 
   background-image: radial-gradient(circle at 19% 465%, #00b7c0, #001a4b);
@@ -192,14 +194,15 @@ padding-right: 0;
 	vertical-align: inherit;
 	margin: 0 10px;
 } 
-.contacts dl{
+.contacts ul{
 display: inline-block;
 margin: 20px 0;
+list-style-type: none;
 
 
 }
 
-.contacts dl a{
+.contacts li a{
 	  font-size: 12px;
 }
 .bottom-footer{
@@ -252,7 +255,7 @@ text-align: center;
 	.collapse.in {
 		display: block !important;
 	}
-
+/*-- //force-ipad-mobile-navbar-*/
 
 		.navbar-brand img{
 		  width: 101px;
@@ -334,8 +337,24 @@ text-transform: uppercase;
 	.second-header-list{
 margin-bottom: 35px;
 	}
+	.mobile-content-block{
+		display: block;
+		color: #fff;
+	}
+	.mobile-content-block a{
+		float: right;
+		margin-bottom: 55px;
+	}
+	.mobile-content-block h4{
+		font-size: 20px;
+		margin-bottom:20px;
+
+	}
+	.mobile-content-block ul li{
+		margin: 15px 0 15px 15px;
+	}
 }
-/*-- //force-ipad-mobile-navbar-*/
+
 
 @media (max-width: 414px) {
 	body{
