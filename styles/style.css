@@ -59,14 +59,23 @@ font-weight: 100;
 
 
 }
-.navbar-inverse{
+.navbar{
 	border: none;
+
 }
 .navbar-nav{
 	float: right;
 }
-.navbar-nav img{
+.first-header-list img{
 	margin-right: 6px;
+}
+.first-header-list{
+	      margin-top: 26px;
+}
+.second-header-list{
+
+
+    margin-top: 26px;
 }
 .carousel-caption{
     position:static;
@@ -80,21 +89,36 @@ font-weight: 100;
 	margin-bottom: 29px;
 	font-size: 28px;
 }
-.carousel-inner a{
+.call-btn, .carousel-inner a{
 text-align: center;
   background: linear-gradient(to bottom, #f5515f, #b7001b);
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
   color:#fff;
   padding: 13px 49px;
-
     border-radius: 25px;
   display: table;
   margin: auto;
-
-
-
+}
+.collapse{
+	background: url('../images/assets/line.svg') 1% 58.5% repeat-x;
 
 }
+.nav>li>a{
+	padding: 0;
+	margin: 10px 15px;
+}
+.nav>li:last-child>a{
+	margin-right: 0;
+}
+.nav>li>a.call-btn{
+	padding: 6px 12px;
+	  font-size: 13px;
+	    
+	      margin: 5px 0 10px 15px;
+
+	    
+}
+
 .info-btn-container{
 	  margin-top: 30px; 
 }
@@ -120,12 +144,15 @@ text-align: center;
 }
 
 
-.social-icons-list h6{
+.social-icons-list p{
 	 font-size: 12px;
 	 color: #fff;
 text-align: center;
 	font-family: LucidaGrande;
 
+}
+.social-icons-list{
+	margin-top: 19px;
 }
 .social-icons-list ul{
 list-style: none;
@@ -149,9 +176,11 @@ padding-left: 0;
 } 
 .contacts dl{
 display: inline-block;
+margin: 20px 0;
 
 
 }
+
 .contacts dl a{
 	  font-size: 12px;
 }
@@ -163,3 +192,48 @@ text-align: center;
   padding: 11px 0;
 
 }
+.news-link-footer{
+	margin-top: 29px;
+}
+/*-- force-ipad-mobile-navbar-*/
+
+@media (max-width: 1200px) {
+	.navbar-header {
+		float: none;
+	}
+	.navbar-left,
+	.navbar-right {
+		float: none !important;
+	}
+	.navbar-toggle {
+		display: block;
+	}
+	.navbar-collapse {
+		border-top: 1px solid transparent;
+		box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+	}
+	.navbar-fixed-top {
+		top: 0;
+		border-width: 0 0 1px;
+	}
+	.navbar-collapse.collapse {
+		display: none!important;
+	}
+	.navbar-nav {
+		float: none!important;
+		margin-top: 7.5px;
+	}
+	.navbar-nav>li {
+		float: none;
+	}
+	.navbar-nav>li>a {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	.collapse.in {
+		display: block !important;
+	}
+}
+
+
+/*-- //force-ipad-mobile-navbar-*/
