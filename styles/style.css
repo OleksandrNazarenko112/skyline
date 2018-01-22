@@ -252,10 +252,9 @@ text-align: center;
 	.collapse.in {
 		display: block !important;
 	}
-}
-/*-- //force-ipad-mobile-navbar-*/
-@media (max-width: 1024px) {
-	.navbar-brand img{
+
+
+		.navbar-brand img{
 		  width: 101px;
   height: 52px;
 
@@ -303,7 +302,8 @@ text-align: center;
 		bottom: 5px;
 	}
 	.carousel{
-		margin-top: 16px;
+	
+		margin: 16px 0 25px 0;
 
   background-image: radial-gradient(circle at 50% 50%, rgba(0, 183, 192, 0.95), rgba(0, 26, 75, 0.95));
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
@@ -334,8 +334,9 @@ text-transform: uppercase;
 	.second-header-list{
 margin-bottom: 35px;
 	}
-
 }
+/*-- //force-ipad-mobile-navbar-*/
+
 @media (max-width: 414px) {
 	body{
 		  background:url(../images/assets/skyline-circle.png) 1% 35% no-repeat, radial-gradient(circle at 31% 54%, #00b7c0, #001a4b); 
